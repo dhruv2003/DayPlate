@@ -39,7 +39,10 @@ export function OrderSuggestions({ options }: { options: MealPlanResponse["order
               </ul>
             </div>
             
-            <button className="w-full mt-4 neo-btn py-2 flex justify-center items-center gap-2" onClick={() => alert("Zomato/Swiggy integration coming soon!")}>
+            <button 
+              className="w-full mt-4 neo-btn py-2 flex justify-center items-center gap-2" 
+              onClick={() => window.open(`https://www.google.com/search?q=${encodeURIComponent(opt.searchQuery)}`, '_blank')}
+            >
               Order Now <ExternalLink size={16} />
             </button>
           </div>
